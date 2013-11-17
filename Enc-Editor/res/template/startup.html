@@ -1,0 +1,51 @@
+<div class="jumbotron">
+    <h2>Welcome to Encouragement System</h2>
+    <p>
+        Select your previous project or open a directory.
+    </p>
+</div>
+<div class="row">
+    <div class="col-lg-5">
+        <div class="list-group" ng-controller="prevProjCtrl">
+            <a href=""  class="list-group-item">
+                <h4 class="list-group-item-heading">Open directory</h4>
+            </a>
+            <a href=""  class="list-group-item active" ng-repeat="proj in projects">
+                <h4 class="list-group-item-heading">{{proj[0]}}</h4>
+                <p class="list-group-item-text">{{proj[1]}}</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="panel">
+            <div class="panel-heading">Create new project</div>
+            <form ng-controller="newProjCtrl" name="newProjForm">
+                <!-- "Modal" -->
+                <div class="panel myModal" ng-show="dir_processing">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Processing</h3>
+                    </div>
+                    <label>{{progress}}</label>
+                    <div class="progress">
+                        <div class="progress-bar" ng-style="{width:percent}"></div>
+                    </div>
+                </div>
+                <div class="modal-backdrop" ng-show="dir_processing"></div>
+                <fieldset>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input class="form-control" type="text" placeholder="Your project's name" ng-model="proj_name" name="projName" required/>
+                    </div>
+                    <!-- Fake input -->
+                    <input type="file" style="display:none" nwdirectory id="choose_dir"/>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-large"
+                                type="button" ng-click="selectDir()" ng-disabled="dir_processing || !newProjForm.projName.$valid">
+                            Choose Directory
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

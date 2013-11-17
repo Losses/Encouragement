@@ -1,0 +1,13 @@
+{
+  "name": "buzz",
+  "homepage": "https://github.com/jaysalvat/buzz",
+  "version": "1.0.6",
+  "_release": "1.0.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.6",
+    "commit": "3d98c75f797b49a8377b7dd4ee7c3ae305a43989"
+  },
+  "_source": "git://github.com/jaysalvat/buzz.git",
+  "_target": "~1.0.6"
+}

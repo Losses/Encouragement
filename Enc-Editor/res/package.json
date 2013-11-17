@@ -1,0 +1,11 @@
+{
+    "main":"index.html",
+    "name":"encouragement-editor",
+    "window":{
+        "title":"Encouragement System",
+        "width":1024,
+        "height":640,
+        "toolbar":false,
+        "resizable":false
+    }
+}

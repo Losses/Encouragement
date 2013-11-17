@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US" ng-app="editor">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="lib/fontello/css/fontello.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+<div class="navbar">
+    <a class="navbar-brand">Resource Editor</a>
+    <ul class="nav navbar-nav">
+        <li>
+            <a href=""><i class="icon-script"></i>&nbsp;&nbsp;Script</a>
+        </li>
+        <li><a href=""><i class="icon-snippet"></i>&nbsp;&nbsp;Snippet</a></li>
+        <li><a href=""><i class="icon-task"></i>&nbsp;&nbsp;Task</a></li>
+        <li><a href=""><i class="icon-object"></i>&nbsp;&nbsp;Object</a></li>
+        <li><a href=""><i class="icon-branch"></i>&nbsp;&nbsp;Branch</a></li>
+        <li><a href=""><i class="icon-character"></i>&nbsp;&nbsp;Character</a></li>
+        <li><a href=""><i class="icon-se"></i>&nbsp;&nbsp;Audio</a></li>
+    </ul>
+</div>
+<div class="container" ui-view="root"></div>
+<script src="lib/jquery-2.0.3.js"></script>
+<script src="lib/bower_components/angular/angular.js"></script>
+<script src="lib/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="lib/ui-bootstrap-tpls-0.4.0.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
