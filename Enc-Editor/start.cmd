@@ -1,1 +1,1 @@
-start D:\Encouragement_System\Enc-Editor\bin\nw.exe D:\Encouragement_System\Enc-Editor\res
+start .\bin\nw.exe .\res
